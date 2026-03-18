@@ -1,7 +1,7 @@
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 <div align="center">
-  <h1>💫 @rexxhayanasi/elaina-baileys </h1>
+  <h1>💫 @rexxtheproject/elaina-baileys </h1>
   <p><em>Custom WhatsApp library built upon Baileys — enhanced, modernized, and elegant.</em></p>
 </p>
 
@@ -58,7 +58,7 @@
 
 <p>
   <!-- WhatsApp Channel -->
-  <a href="https://whatsapp.com/channel/0029VbBdVbVGJP8K5d9LiN0q">
+  <a href="https://whatsapp.com/channel/0029VbCa8LKBFLgNswevBG2w">
     <img src="https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?logo=whatsapp&logoColor=white" alt="WhatsApp Channel" />
   </a>
 </p>
@@ -319,10 +319,19 @@ Terima kasih kepada semua pihak yang telah memberikan dukungan, inspirasi, serta
 <table>
 <tr>
 <td align="center">
-<a href="https://github.com/RexxHayanasi">
+<a href="https://github.com/rexxtheproject">
 <img src="https://avatars.githubusercontent.com/u/150516773?v=4" width="80px;" style="border-radius:50%;" alt="Rexx"/>
 <br />
-<sub><b>RexxHayanasi [ developer project ]</b></sub>
+<sub><b>RexxTheProject  || RexxHayanasi [ developer project ]</b></sub>
+</a>
+</td>
+
+<tr>
+<td align="center">
+<a href="https://github.com/rexxhayanasi">
+<img src="https://avatars.githubusercontent.com/u/150516773?v=4" width="80px;" style="border-radius:50%;" alt="Rexx"/>
+<br />
+<sub><b>RexxHayanasi [ Second Account ]</b></sub>
 </a>
 </td>
 
