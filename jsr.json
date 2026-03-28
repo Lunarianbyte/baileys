@@ -1,6 +1,6 @@
 {
   "name": "@rexxtheproject/elaina-baileys",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "exports": "./lib/index.js",
   "publish": {
     "include": [
