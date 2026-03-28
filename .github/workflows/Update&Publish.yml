@@ -1,0 +1,70 @@
+name: Update WhatsApp Web Version and Publish to JSR
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write 
+
+jobs:
+  update-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Update WhatsApp Web Version
+        run: yarn update:version
+
+      - name: Sync and Commit Versions
+        id: sync_step
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git add lib/Defaults/baileys-version.json lib/Defaults/index.js
+          
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          node -e "
+            const fs = require('fs');
+            
+            const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+            const parts = pkg.version.split('.');
+            parts[2] = parseInt(parts[2]) + 1;
+            const newVersion = parts.join('.');
+            pkg.version = newVersion;
+            fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2) + '\n');
+            
+            const jsr = JSON.parse(fs.readFileSync('./jsr.json', 'utf8'));
+            jsr.version = newVersion;
+            fs.writeFileSync('./jsr.json', JSON.stringify(jsr, null, 2) + '\n');
+            
+            console.log(newVersion);
+          "
+
+          git add package.json jsr.json
+          git commit -m "chore: update WhatsApp Web version and sync to JSR"
+          git push origin master
+          echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Publish to JSR
+        if: steps.sync_step.outputs.changed == 'true'
+        run: npx jsr publish --allow-slow-types
