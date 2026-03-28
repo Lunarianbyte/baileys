@@ -31,7 +31,8 @@
     "lint": "eslint src --ext .js",
     "lint:fix": "yarn lint --fix",
     "release": "release-it",
-    "test": "jest"
+    "test": "jest",
+    "update:version": "node scripts/Update-version.js"
     },
   "dependencies": {
     "@rexxtheproject/keyed-db": "^1.0.0",
