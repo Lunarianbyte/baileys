@@ -1,17 +1,17 @@
 {
   "name": "@rexxtheproject/elaina-baileys",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Baileys Modifications That Are Useful for WhatsApp Bot ESM & CJS Developed by RexxHayanasi",
   "keywords": [
-    "baileys", 
-    "baileys-mod", 
-    "wabot", 
+    "baileys",
+    "baileys-mod",
+    "wabot",
     "whatsapp",
-    "js-whatsapp", 
-    "whatsapp-api", 
+    "js-whatsapp",
+    "whatsapp-api",
     "whatsapp-web",
     "whatsapp-bot",
-    "automation", 
+    "automation",
     "multi-device",
     "RexxHayanasi"
   ],
@@ -33,7 +33,7 @@
     "release": "release-it",
     "test": "jest",
     "update:version": "node scripts/Update-version.js"
-    },
+  },
   "dependencies": {
     "@rexxtheproject/keyed-db": "^1.0.0",
     "@cacheable/node-cache": "^1.4.0",
