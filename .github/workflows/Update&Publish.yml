@@ -27,7 +27,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Update WhatsApp Web Version
-        run: node scripts/Update-version.js
+        run: node script/Update-version.js
 
       - name: Sync and Commit Versions
         id: sync_step
