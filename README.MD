@@ -28,11 +28,11 @@ Thanks to the following awesome contributors who help improve this project 💖
 
 
 ## 📌 Overview
->  `elaina-baileys` is a refined version of the Baileys library with cleaner API usage, exclusive features like album messaging, newsletter controls, and full-size profile uploads — tailored for modern WhatsApp automation needs.
+>  `@lunarianbyte/baileys` is a refined version of the Baileys library with cleaner API usage, exclusive features like album messaging, newsletter controls, and full-size profile uploads — tailored for modern WhatsApp automation needs.
 
+## 🌙 CHANGELOG
 > **Update** 
 > All update information is now redirected to the WhatsApp channel check at the bottom of the "homepage".
-
 > Udpate changelog see on our WhatsApp channel
 
 ---
@@ -47,13 +47,13 @@ Fork Baileys (NPM) **@whiskeysockets/baileys** / **@adiwajshing/baileys**
 ```json
 @whiskeysockets/baileys
 "dependencies": {
-    "@whiskeysockets/baileys": "npm:@rexxtheproject/elaina-baileys"
+    "@whiskeysockets/baileys": "npm:@lunarianbyte/baileys"
 }
 ```
 ```json
 @adiwajsing/baileys
 "dependencies": {
-    "@adiwajshing/baileys": "npm:@rexxtheproject/elaina-baileys"
+    "@adiwajshing/baileys": "npm:@lunarianbyte/baileys"
 }
 ```
 
@@ -63,19 +63,19 @@ Fork Baileys (NPM) **@whiskeysockets/baileys** / **@adiwajshing/baileys**
 ```json
 @whiskeysockets/baileys
 "dependencies": {
-    "@whiskeysockets/baileys": "github:@rexxtheproject/elaina-baileys"
+    "@whiskeysockets/baileys": "github:@lunarianbyte/baileys"
 }
 ```
 ```json
 @adiwajsing/baileys
 "dependencies": {
-    "@adiwajshing/baileys": "github:@rexxtheproject/elaina-baileys"
+    "@adiwajshing/baileys": "github:@lunarianbyte/baileys"
 }
 ```
 
 Or via terminal non fork
 ```bash
-npm install elaina-baileys@github:@rexxtheproject/elaina-baileys
+npm install baileys@github:@lunarianbyte/baileys
 ```
 
 ---
@@ -83,15 +83,6 @@ npm install elaina-baileys@github:@rexxtheproject/elaina-baileys
 Importing (for those who don't fork another repository)
 ESM & CJS
 
-> ESM
-```bash
-import makeWASocket from '@rexxtheproject/elaina-baileys
-```
-
-> CJS
-```bash
-const { default: makeWASocket } = require('@rexxtheproject/elaina-baileys')
-```
 ---
 🌟 Key Features
 | Category | Description |
@@ -259,60 +250,5 @@ await sock.groupUpdateDescription(group.id,"This is our awesome group!"
 </details>
 
 ---
-
-### 🐞 Menemukan Bug?
-
-Jika Anda menemukan bug atau kendala saat menggunakan proyek ini, silakan lakukan salah satu opsi berikut:
-
-- **Buka Issue** melalui website resmi (segera hadir)
-- **Hubungi maintainer langsung** melalui WhatsApp
-
-<p align="center">
-  <a href="https://wa.me/6285924647929" target="_blank" rel="noopener noreferrer">
-    <img
-      alt="Chat on WhatsApp"
-      src="https://img.shields.io/badge/Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
-    />
-  </a>
-</p>
-<details>
-<summary>🙏 <strong>TQTO (Thanks To)</strong></summary>
-
-Terima kasih kepada semua pihak yang telah memberikan dukungan, inspirasi, serta kontribusi—baik secara langsung maupun tidak langsung—dalam pengembangan proyek ini:
-
-- **Allah SWT** — atas segala rahmat, kemudahan, dan perlindungan-Nya.
-- **Orang Tua** — atas kasih sayang, doa, dan dukungan yang tiada henti.
-- **RexxHayanasi (Saya)** — pengembang utama proyek ini.
-
-</details>
-
-<table>
-<tr>
-<td align="center">
-<a href="https://github.com/rexxtheproject">
-<img src="https://avatars.githubusercontent.com/u/266297437?v=4" width="80px;" style="border-radius:50%;" alt="Rexx"/>
-<br />
-<sub><b>RexxTheProject  || RexxHayanasi [ developer project ]</b></sub>
-</a>
-</td>
-
-<tr>
-<td align="center">
-<a href="https://github.com/rexxhayanasi">
-<img src="https://avatars.githubusercontent.com/u/150516773?v=4" width="80px;" style="border-radius:50%;" alt="Rexx"/>
-<br />
-<sub><b>RexxHayanasi [ Second Account ]</b></sub>
-</a>
-</td>
-
-<td align="center">
-<a href="https://github.com/kiuur">
-<img src="https://avatars.githubusercontent.com/u/182334162?v=4" width="80px;" style="border-radius:50%;" alt="Kiuu"/>
-<br />
-<sub><b>Kyuu [ kiuur ]</b></sub>
-</a>
-</td>
-</tr>
-</table>
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="transform: rotate(180deg);">
