@@ -1,7 +1,7 @@
 {
-  "name": "@rexxtheproject/elaina-baileys",
+  "name": "@lunarianbyte/baileys",
   "version": "1.0.6",
-  "description": "Baileys Modifications That Are Useful for WhatsApp Bot ESM & CJS Developed by RexxHayanasi",
+  "description": "Baileys Modifications That Are Useful for WhatsApp Bot ESM & CJS maintenance by @lunarianbyte/baileys",
   "keywords": [
     "baileys",
     "baileys-mod",
@@ -13,7 +13,7 @@
     "whatsapp-bot",
     "automation",
     "multi-device",
-    "RexxHayanasi"
+    "@lunarianbyte/baileys"
   ],
   "license": "MIT",
   "author": "RexxHayanasi",
@@ -23,9 +23,9 @@
     "WAProto/*"
   ],
   "scripts": {
-    "changelog:update": "conventional-changelog -p RexxHayanasi.js -i CHANGELOG.md -s -r 0",
-    "changelog:preview": "conventional-changelog -p RexxHayanasi.js -u",
-    "changelog:last": "conventional-changelog -p RexxHayanasi.js -r 2",
+    "changelog:update": "conventional-changelog -p @lunarianbyte/baileys.js -i CHANGELOG.md -s -r 0",
+    "changelog:preview": "conventional-changelog -p @lunarianbyte/baileys.js -u",
+    "changelog:last": "conventional-changelog -p @lunarianbyte/baileys.js -r 2",
     "gen:protobuf": "sh WAProto/GenerateStatics.sh",
     "example": "node --inspect Example/example.js",
     "lint": "eslint src --ext .js",
