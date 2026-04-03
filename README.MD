@@ -179,7 +179,7 @@ Pairing perangkat WhatsApp menggunakan kode kustom.
 <summary><strong>Lihat Contoh</strong></summary>
 
 ```js
-const code = await sock.requestPairingCode("62xxxxxxxxxx","ELAINA01");
+const code = await sock.requestPairingCode("62xxxxxxxxxx","LINARYMD");
 
 console.log("Pairing Code:", code);
 ```
