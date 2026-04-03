@@ -5,14 +5,8 @@
   <p><em>Custom WhatsApp library built upon Baileys — enhanced, modernized, and elegant.</em></p>
 </p>
 
-  <img src="https://files.catbox.moe/dulwdz.jpeg" width="400" alt="Elaina Bail Banner" style="border-radius: 15px; border: 2px solid #ff0000;" />
+  <img src="https://files.catbox.moe/ek65f3.JPG" width="400" alt="Elaina Bail Banner" style="border-radius: 15px; border: 2px solid #ff0000;" />
   <br><br>
-
-  <p>
-  <!-- NPM Version -->
-  <a href="https://www.npmjs.com/package/@rexxhayanasi/elaina-baileys">
-    <img src="https://img.shields.io/npm/v/@rexxhayanasi/elaina-baileys?color=blueviolet&label=version&logo=npm" alt="npm version" />
-  </a>
 
 <p>
   <!-- WhatsApp Channel -->
@@ -27,7 +21,6 @@
 </div>
 
 > [!CAUTION]
-> `elaina-baileys` The old channel was banned due to an error by one of the admins, so we moved the information to the new channel.
 > Built on top of the WhiskeySockets/Baileys project. All original core logic credits go to their team. elaina-baileys extends it with thoughtful UX and DX improvements.
 > 🙌 Contributors outside the Baileys code
 Thanks to the following awesome contributors who help improve this project 💖
