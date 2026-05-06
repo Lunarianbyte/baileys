@@ -1,9 +1,5 @@
-import { readFileSync, writeFileSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const { readFileSync, writeFileSync } = require('fs');
+const { join } = require('path');
 
 async function fetchLatestWaWebVersion() {
     try {
@@ -55,7 +51,7 @@ function updateJson(filePath, version) {
     try {
         const fullPath = join(__dirname, '..', filePath);
         const content = { version };
-        writeFileSync(fullPath, JSON.stringify(content, null, 2) + '\n');
+        writeFileSync(fullPath, JSON.stringify(content) + '\n');
         console.log(`✓ Updated ${filePath}`);
         return true;
     } catch (error) {
