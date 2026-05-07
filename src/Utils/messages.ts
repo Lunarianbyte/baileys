@@ -526,40 +526,38 @@ export const generateWAMessageContent = async (
 			}
 		})
 	} else if (hasNonNullishProperty(message, 'interactiveButtons')) {
-	const interactive = message.interactiveButtons
+		const interactive = message.interactiveButtons
 
-	m = {
-		viewOnceMessage: {
-			message: {
-				messageContextInfo: {
-					deviceListMetadata: {},
-					deviceListMetadataVersion: 2
-				},
-				interactiveMessage: proto.Message.InteractiveMessage.create({
-					body: {
-						text: interactive.text
+		m = {
+			viewOnceMessage: {
+				message: {
+					messageContextInfo: {
+						deviceListMetadata: {},
+						deviceListMetadataVersion: 2
 					},
-					footer: interactive.footer
-						? {
-							text: interactive.footer
+					interactiveMessage: proto.Message.InteractiveMessage.create({
+						body: {
+							text: interactive.text
+						},
+						footer: interactive.footer
+							? {
+								text: interactive.footer
+							}
+							: undefined,
+						header: {
+							title: interactive.title || '',
+							subtitle: interactive.subtitle || '',
+							hasMediaAttachment: false
+						},
+						nativeFlowMessage: {
+							buttons: interactive.buttons
 						}
-						: undefined,
-					header: {
-						title: interactive.title || '',
-						subtitle: interactive.subtitle || '',
-						hasMediaAttachment: false
-					},
-					nativeFlowMessage: {
-						buttons: interactive.buttons
-					}
-				})
+					})
+				}
 			}
 		}
-	}
-
-} else if (hasNonNullishProperty(message, 'listReply')) {
-	m.listResponseMessage = { ...message.listReply }
-}
+	} else if (hasNonNullishProperty(message, 'listReply')) {
+		m.listResponseMessage = { ...message.listReply }
 	} else if (hasNonNullishProperty(message, 'event')) {
 		m.eventMessage = {}
 		const startTime = Math.floor(message.event.startDate.getTime() / 1000)
