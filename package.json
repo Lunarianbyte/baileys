@@ -1,18 +1,18 @@
 {
-  "name": "baileys",
+  "name": "@lunarianbyte/baileys",
   "type": "module",
-  "version": "7.0.0-rc10",
+  "version": "1.0.0",
   "description": "A WebSockets library for interacting with WhatsApp Web",
   "keywords": [
     "whatsapp",
     "automation"
   ],
-  "homepage": "https://github.com/WhiskeySockets/Baileys/",
+  "homepage": "https://github.com/lunarianbyte/Baileys/",
   "repository": {
-    "url": "git@github.com:WhiskeySockets/Baileys.git"
+    "url": "git@github.com:lunarianbyte/Baileys.git"
   },
   "license": "MIT",
-  "author": "Rajeh Taher",
+  "author": "Xyraa De Lunar",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
