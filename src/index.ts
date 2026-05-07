@@ -1,6 +1,10 @@
+// src/index.ts
 import makeWASocket from './Socket/index'
 
-export * from '../WAProto/index.js'
+import * as WAProto from '../WAProto/index.js'
+export { WAProto }
+export const proto = WAProto.proto
+
 export * from './Utils/index'
 export * from './Types/index'
 export * from './Defaults/index'
