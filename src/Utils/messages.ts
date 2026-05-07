@@ -525,10 +525,10 @@ export const generateWAMessageContent = async (
 				productImage: imageMessage
 			}
 		})
-	} else if (hasNonNullishProperty(message, 'interactiveButtons')) {
-	const interactive = message.interactiveButtons
-
-	m = {
+	}
+	 else if (hasNonNullishProperty(message, 'interactiveButtons')) {
+	 	const interactive = message.interactiveButtons
+	 		m = {
 		viewOnceMessage: {
 			message: {
 				messageContextInfo: {
@@ -556,10 +556,9 @@ export const generateWAMessageContent = async (
 			}
 		}
 	}
-
-} else if (hasNonNullishProperty(message, 'listReply')) {
-	m.listResponseMessage = { ...message.listReply }
-}
+	
+	} else if (hasNonNullishProperty(message, 'listReply')) {
+		m.listResponseMessage = { ...message.listReply }
 	} else if (hasNonNullishProperty(message, 'event')) {
 		m.eventMessage = {}
 		const startTime = Math.floor(message.event.startDate.getTime() / 1000)

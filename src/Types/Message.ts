@@ -285,7 +285,7 @@ export type AnyRegularMessageContent = (
 	| RequestPhoneNumber
 ) &
 	ViewOnce
-
+	
 export type InteractiveButton = {
 	name: string
 	buttonParamsJson: string
@@ -302,7 +302,7 @@ export type InteractiveMessageContent = {
 
 export type AnyMessageContent =
 	| AnyRegularMessageContent
-	| {
+    | {
 		interactiveButtons: InteractiveMessageContent
 	}
 	| {
