@@ -1,64 +1,85 @@
-<h1><img alt="Baileys logo" src="https://raw.githubusercontent.com/WhiskeySockets/Baileys/refs/heads/master/Media/logo.png" height="75"/></h1>
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
+<div align="center">
+  <h1>🌙 @lunarianbyte/baileys </h1>
+  <p><em>Custom WhatsApp library built upon Baileys — enhanced, modernized, and elegant.</em></p>
+</p>
+
+  <img src="https://files.catbox.moe/ek65f3.JPG" width="400" alt="Elaina Bail Banner" style="border-radius: 15px; border: 2px solid #ff0000;" />
+  <br><br>
+
+<p>
+  <!-- WhatsApp Channel -->
+  <a href="https://whatsapp.com/channel/0029VbCa8LKBFLgNswevBG2w">
+    <img src="https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?logo=whatsapp&logoColor=white" alt="WhatsApp Channel" />
+  </a>
+</p>
+</div>
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b636-4676-a213-39d67b2d5d67.gif" width="100%">
+</div>
 
 > [!CAUTION]
-> NOTICE OF BREAKING CHANGE.
->
-> As of 7.0.0, multiple breaking changes were introduced into the library.
->
-> Please check out https://whiskey.so/migrate-latest for more information.
+> Built on top of the WhiskeySockets/Baileys project. All original core logic credits go to their team. lunarianbyte/baileys extends it with thoughtful UX and DX improvements.
+> 🙌 Contributors outside the Baileys code
+Thanks to the following awesome contributors who help improve this project 💖
+---
 
-Baileys is a WebSockets-based TypeScript library for interacting with the WhatsApp Web API.
 
-Join the WhiskeySockets community via the link: https://whiskey.so/discord
+## 📌 Overview
+>  `@lunarianbyte/baileys` is a refined version of the Baileys library with cleaner API usage, exclusive features like album messaging, newsletter controls, and full-size profile uploads — tailored for modern WhatsApp automation needs.
 
-# Usage & Guide
+## 🌙 CHANGELOG
+> **Update** 
+> All update information is now redirected to the WhatsApp channel check at the bottom of the "homepage".
+> Udpate changelog see on our WhatsApp channel
 
-> [!IMPORTANT]
-> The new guide is a work in progress. Expect missing pages/content. [Report missing or incorrect content.](https://github.com/WhiskeySockets/baileys.wiki-site/issues/new)
->
-> **You can still access the old guide here:** [README.md](https://github.com/WhiskeySockets/Baileys/tree/master/README.md), or the [NPM homepage](https://npmjs.com/package/baileys).
+---
 
-The new guide is posted at https://baileys.wiki .
+## 📦 Installation
 
-# Get Support
+### Via `package.json`
 
-If you'd like business to enterprise-level support from Rajeh, the current maintainer of Baileys, you can book a video chat. Book a 1 hour time slot by contacting him on Discord or pre-ordering [here](https://purpshell.dev/book). The earlier you pre-order the better, as his time slots usually fill up very quickly. He offers immense value per hour and will answer all your questions before the time runs out.
+[ GITHUB ]
+Fork Baileys (NPM) **@whiskeysockets/baileys** / **@adiwajshing/baileys**
 
-If you are a business, we encourage you to contribute back to the high development costs of the project and to feed the maintainers who dump tens of hours a week on this. You can do so by booking meetings or sponsoring below. All support, even in bona fide / contribution hours, is welcome by businesses of all sizes. This is not condoning or endorsing businesses to use the library. See the Disclaimer below.
+```json
+@whiskeysockets/baileys
+"dependencies": {
+    "@whiskeysockets/baileys": "github:@lunarianbyte/baileys"
+}
+```
+```json
+@adiwajsing/baileys
+"dependencies": {
+    "@adiwajshing/baileys": "github:@lunarianbyte/baileys"
+}
+```
 
-# Sponsor
+Or via terminal non fork
+```bash
+npm install baileys@github:@lunarianbyte/baileys
+```
 
-If you'd like to financially support this project, you can do so by supporting the current maintainer [here](https://purpshell.dev/sponsor).
+---
 
-# Disclaimer
-> [!CAUTION]
-> This project is not affiliated, associated, authorized, endorsed by, or in any way officially connected with WhatsApp or any of its subsidiaries or its affiliates.
-> The official WhatsApp website can be found at whatsapp.com. "WhatsApp" as well as related names, marks, emblems and images are registered trademarks of their respective owners.
->
-> The maintainers of Baileys do not in any way condone the use of this application in practices that violate the Terms of Service of WhatsApp. The maintainers of this application call upon the personal responsibility of its users to use this application in a fair way, as it is intended to be used.
-> Use at your own discretion. Do not spam people with this. We discourage any stalkerware, bulk or automated messaging usage.
+Importing (for those who don't fork another repository)
+ESM & CJS
 
-# License
-Copyright (c) 2025 Rajeh Taher/WhiskeySockets
+---
+🌟 Key Features
+| Category | Description |
+|---|---|
+|channels | Seamlessly send messages to WhatsApp Channels. |
+| 🖱️ Buttons | Create interactive messages with button options and quick replies. |
+| 🖼️ Albums | Send grouped images or videos as an album (carousel-like format). |
+| 👤 LID Grouping | Handle group operations using the latest @lid addressing style. |
+| 📷 HD Profile Pics | Upload full-size profile pictures without cropping. |
+| 🔐 Pairing Code | Generate custom alphanumeric pairing codes. |
+| 🛠️ Dev Experience | Reduced noise from logs with optimized libsignal printouts. |
+---
 
-Licensed under the MIT License:
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+---
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-Thus, the maintainers of the project can't be held liable for any potential misuse of this project.
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="transform: rotate(180deg);">
