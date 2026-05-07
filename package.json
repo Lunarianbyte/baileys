@@ -9,8 +9,9 @@
   ],
   "homepage": "https://github.com/lunarianbyte/baileys/",
   "repository": {
-    "url": "git@github.com:lunarianbyte/Baileys.git"
-  },
+  "type": "git",
+  "url": "git@github.com:lunarianbyte/baileys/baileys.git"
+},
   "license": "MIT",
   "author": "Xyraa De Lunar",
   "main": "lib/index.js",
