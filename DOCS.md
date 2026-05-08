@@ -1,4 +1,4 @@
-# Baileys-jawa - Message Sending Documentation
+# @xyraadelunar/baileys - Message Sending Documentation
 
 ## sendMessage Usage
 
